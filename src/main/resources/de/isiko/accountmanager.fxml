@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.8450980392156863" orientation="VERTICAL" prefHeight="930.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.isiko.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TabPane prefHeight="655.0" prefWidth="888.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab closable="false" text="Setup (required)">
+                    <content>
+                        <TabPane>
+                           <tabs>
+                              <Tab closable="false" text="Operator and node details">
+                                 <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="91.0" prefWidth="347.0">
+                                       <children>
+                                          <ScrollPane prefViewportHeight="310.0" prefViewportWidth="409.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Operator and node details">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Account and node to use. Also used as default for any operations." />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Operator ID" />
+                                                                  <TextField fx:id="operatorIdTf" promptText="OPERATOR_ID" text="0.0.28616" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Operator key" />
+                                                                  <TextField fx:id="operatorKeyTf" promptText="OPERATOR_KEY" text="302e020100300506032b657004220420338fb71889ca286319f16dfd741742d2e4080e22a4d1303def2d2bf3dfcb3494" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Node ID" />
+                                                                  <TextField fx:id="nodeIdTf" promptText="NODE_ID" text="0.0.3" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Node address" />
+                                                                  <TextField fx:id="nodeAddressTf" promptText="NODE_ADDRESS" text="0.testnet.hedera.com:50211" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Button fx:id="connectToAccountBtn" mnemonicParsing="false" onAction="#connectToAccount" text="Connect " />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                    </content>
+                  </Tab>
+                  <Tab closable="false" text="Account manager">
+                     <content>
+                        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab closable="false" text="Create account">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Create account">
+                                                                     <font>
+                                                                        <Font size="20.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Create a new account on the Hedera network" textFill="#000000bf" wrapText="true">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Intitial balance">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Initial balance in tinybars" textFill="#000000bf" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="initialBalanceTf" promptText="e.g. 1000" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Set expiration time of account (in seconds)">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="1 hour = 3600 seconds;  1 day 86400; 30 days = 2592000" textFill="#000000bf" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="accountExpirationTimeTf" promptText="e.g. 7890000" text="7890000" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                         <children>
+                                                            <Button fx:id="createAccountBtn" mnemonicParsing="false" onAction="#createAccount" text="Create Account" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <TextArea fx:id="createAccountTa" editable="false" HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab closable="false" text="Update account">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <ScrollPane prefViewportHeight="554.0" prefViewportWidth="522.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Account to be changed">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The account you want to change" textFill="#000000bf" />
+                                                                  <TextField fx:id="accountToBeChangedId" promptText="ID of account to be changed" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0" />
+                                                                  <TextField fx:id="accountToBeChangedPrivateKey" promptText="Key of account to be changed" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Update an account">
+                                                                     <font>
+                                                                        <Font size="20.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Update/change the properties for an your account" textFill="#000000bf">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Set proxy account">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="ID of account to which this account should be proxy staked." textFill="#000000bf" />
+                                                                  <TextField fx:id="setProxyAccountAccountIdTf" promptText="Account ID" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <Button fx:id="setProxyAccountBtn" mnemonicParsing="false" onAction="#setProxyAccount" text="Set proxy account" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Set new key for account">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The private key generated for the new account." textFill="#000000bf" />
+                                                                  <TextField fx:id="setNewKeyForAccountTf" promptText="New key" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <Button fx:id="setKeyForAccountBtn" mnemonicParsing="false" onAction="#setKeyForAccount" text="Set key for account" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Set send record threshold">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Creates a record for any transaction that withdraws more than x value of tinybars." textFill="#000000bf" />
+                                                                  <TextField fx:id="setSendRecordThresholdTf" promptText="e.g. 1000000" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <Button fx:id="setSendRecordThresholdBtn" mnemonicParsing="false" onAction="#setSendRecordThreshold" text="Set send record threshold" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Set receive record threshold">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Creates a record for any transaction that deposits more than x value of tinybars." textFill="#000000bf" />
+                                                                  <TextField fx:id="setReceiveRecordThresholdTf" promptText="e.g. 1000000" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <Button fx:id="setReceiveRecordThresholdBtn" mnemonicParsing="false" onAction="#setReceiveRecordThreshold" text="Set receive record threshold" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Set auto renew duration">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The duration of time in which the account will auto-renew in seconds." textFill="#000000bf" />
+                                                                  <TextField fx:id="setAutoRenewPeriodTf" promptText="e.g. 1000000" text="7890000" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <Button fx:id="setAutoRenewPeriodBtn" mnemonicParsing="false" onAction="#setAutoRenewPeriod" text="Set new auto-renew period" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Extend expiration time">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The new expiration time to extend to in seonds" textFill="#000000bf" />
+                                                                  <TextField fx:id="setExpirationTimeTf" promptText="e.g. 3600 for one hour" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <Button fx:id="setExpirationTimeBtn" mnemonicParsing="false" onAction="#setExpirationTime" text="Extend expiration time" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab closable="false" text="Transfer  cryptocurrency">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Transfer Cryptocurrency">
+                                                                     <font>
+                                                                        <Font size="20.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Transfer tinybars" textFill="#000000bf" wrapText="true">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Sender">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The transaction will be send from the operator ID" textFill="#000000bf" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <Button fx:id="transferSenderCheckBalanceBtn" mnemonicParsing="false" onAction="#checkSenderBalance" text="Check sender balance" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Recipient ID">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Recipient ID to send to" textFill="#000000bf" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="recipientIdTf" promptText="e.g. 0.0.1245" />
+                                                                        <Button fx:id="transferRecipientCheckBalanceBtn" mnemonicParsing="false" onAction="#checkRecipientBalance" text="Check recipient balance" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Amount to Send">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Amount to send in tinybars! 1 hbar = 100,000,000 tinybars" textFill="#000000bf" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="amountToSendTf" promptText="e.g. 35000000" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Perform transaction">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Perform transaction. This action cant be reverted. " textFill="#000000bf" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <Button fx:id="sendTinybarsBtn" mnemonicParsing="false" onAction="#sendTinybars" text="Send tinybars" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab closable="false" text="Delete account">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <ScrollPane prefViewportHeight="792.0" prefViewportWidth="1119.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Delete Account">
+                                                                     <font>
+                                                                        <Font size="20.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Delete an account from the Hedera Network" textFill="#000000bf">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <Label style="-fx-border-color: grey;" text="THIS WILL DELETE YOUR ACCOUNT AND CANNOT BE REVERTED">
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </Label>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Account to Delete">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The account that will get deleted" textFill="#000000bf" />
+                                                                  <TextField fx:id="accountToDeleteTf" promptText="to be deleted accountId" />
+                                                                  <TextField fx:id="accountToDeletePrivateKeyTf" promptText="The account that will get deleted" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="New owner">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The account that will get the tinybars from the to be deleted account" textFill="#000000bf" />
+                                                                  <TextField fx:id="newOwnerOfHbarsTf" promptText="The account that will get the hbars (e.g. 0.0.233)" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Delete Account">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="This action is not reversible" textFill="#000000bf" />
+                                                                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                                                     <children>
+                                                                        <Button fx:id="deleteAccountBtn" mnemonicParsing="false" onAction="#deleteAccount" text="Delete account" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab closable="false" text="Get account infos">
+                                <content>
+                                  <AnchorPane>
+                                       <children>
+                                          <ScrollPane fitToHeight="true" fitToWidth="true" prefViewportHeight="167.0" prefViewportWidth="301.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Get account Infos">
+                                                                     <font>
+                                                                        <Font size="20.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Get account infos for an account" textFill="#000000bf">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Account to Query (optional)">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="If empty, operator ID will be used" textFill="#000000bf" />
+                                                                  <TextField fx:id="accountInfoQueryIdTf" promptText="Optional account ID" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <Button fx:id="deleteAccountBtn1" mnemonicParsing="false" onAction="#accountInfoQuery" text="Query account" />
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Query Results">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The results of your query" textFill="#000000bf" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <TextArea fx:id="accountInfoQueryResultsTa" editable="false" promptText="The results of the query will be written here" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab text="Get account records">
+                                <content>
+                                  <AnchorPane>
+                                       <children>
+                                          <ScrollPane fitToHeight="true" fitToWidth="true" prefViewportHeight="404.0" prefViewportWidth="542.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Get account records">
+                                                                     <font>
+                                                                        <Font size="20.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Get account infos for an account" textFill="#000000bf">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Account to Query (optional)">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="If empty, operator ID will be used" textFill="#000000bf" />
+                                                                  <TextField fx:id="accountRecordsQueryIdTf" promptText="Optional account ID" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <Button mnemonicParsing="false" onAction="#accountRecordsQuery" text="Query account" />
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Query Results">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The results of your query" textFill="#000000bf" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <TextArea fx:id="accountRecordsQueryResultsTa" editable="false" promptText="The results of the query will be written here" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </content>
+                  </Tab>
+                  <Tab closable="false" text="File manager">
+                     <content>
+                        <TabPane>
+                           <tabs>
+                              <Tab closable="false" text="Create file">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <ScrollPane fitToHeight="true" fitToWidth="true" prefViewportHeight="310.0" prefViewportWidth="409.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <HBox>
+                                                                     <children>
+                                                                        <VBox>
+                                                                           <children>
+                                                                              <Label text="Create file">
+                                                                                 <font>
+                                                                                    <Font size="20.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                              <Label text="This creates a file on the network and returns a file id" textFill="#000000bf">
+                                                                                 <font>
+                                                                                    <Font size="16.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <VBox HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="File contents">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The contents of the file (UTF-8)" />
+                                                                  <TextArea fx:id="createFileContentsTa" promptText="SET_CONTENTS" VBox.vgrow="ALWAYS">
+                                                                     <VBox.margin>
+                                                                        <Insets top="10.0" />
+                                                                     </VBox.margin></TextArea>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="TIme to live for this file in seconds">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="1 hour = 3600 seconds;  1 day 86400; 30 days = 2592000" />
+                                                                  <TextField fx:id="createFileExpirationTimeTf" text="7890000" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <Button fx:id="createFileBtn" mnemonicParsing="false" onAction="#createFile" text="Create File" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab closable="false" text="Append to file">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="91.0" prefWidth="347.0">
+                                       <children>
+                                          <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Append to a file">
+                                                                     <font>
+                                                                        <Font size="20.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="Append to an existing file you own" textFill="#000000bf">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <HBox>
+                                                                     <children>
+                                                                        <VBox>
+                                                                           <children>
+                                                                              <Label text="File ID">
+                                                                                 <font>
+                                                                                    <Font size="16.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                              <Label text="The ID for the file that will have new content appended." />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <TextField fx:id="fileIdOfFileToAppendTf" promptText="FILE_ID" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <VBox HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="File contents to append (UTF-8)">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The contents to append to the existing contents of a file" />
+                                                                  <TextArea fx:id="bytesToAppendToContentsOfFileTa" promptText="SET_CONTENTS" VBox.vgrow="ALWAYS">
+                                                                     <VBox.margin>
+                                                                        <Insets top="10.0" />
+                                                                     </VBox.margin></TextArea>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <Button fx:id="appendToFileBtn" mnemonicParsing="false" onAction="#appendToFile" text="Append to File" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab closable="false" text="Update a file">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <HBox>
+                                                                     <children>
+                                                                        <VBox>
+                                                                           <children>
+                                                                              <Label text="Update a file">
+                                                                                 <font>
+                                                                                    <Font size="20.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                              <Label text="Update a file you own" textFill="#000000bf">
+                                                                                 <font>
+                                                                                    <Font size="16.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="FIle ID">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The file ID of the file to update." />
+                                                                  <TextField fx:id="setIdOfToBeUpdatedFileTf" promptText="FILE_ID" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="Extend expiration time in seconds">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The time to live of this file will be exteneded by this duration" />
+                                                                  <TextField fx:id="updateExpirationTimeTf" text="7890000" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <VBox HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="New contents of the file (UTF-8)">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The new file contents. All the bytes in the old contents are discarded." />
+                                                                  <TextArea fx:id="updatedContentsOfFileTa" promptText="NEW_FILE_CONTENTS" VBox.vgrow="ALWAYS">
+                                                                     <VBox.margin>
+                                                                        <Insets top="10.0" />
+                                                                     </VBox.margin></TextArea>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Button fx:id="updateFileBtn" mnemonicParsing="false" onAction="#updateFile" text="Update File" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab closable="false" text="Delete a file">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <VBox>
+                                                                     <children>
+                                                                        <Label text="Delete a file">
+                                                                           <font>
+                                                                              <Font size="20.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                        <Label text="Delete a file you own from the network" textFill="#000000bf">
+                                                                           <font>
+                                                                              <Font size="16.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </VBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="File ID">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The ID for the file to be deleted." />
+                                                                  <TextField fx:id="fileToDeleteTf" promptText="FILE_ID" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox />
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Button fx:id="deleteFileBtn" mnemonicParsing="false" onAction="#deleteFile" text="Delete File" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab closable="false" text="Get file contents">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox spacing="10.0">
+                                                   <children>
+                                                      <VBox>
+                                                         <children>
+                                                            <Label text="Get file contents">
+                                                               <font>
+                                                                  <Font size="20.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label text="Get file contents for a file" textFill="#000000bf">
+                                                               <font>
+                                                                  <Font size="16.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="File ID">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The ID for the file whose contents are requested." />
+                                                                  <TextField fx:id="fileToGetContentsFromTf" promptText="FILE_ID" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox />
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Button fx:id="getFileContentsBtn" mnemonicParsing="false" onAction="#getFileContents" text="Get file contents" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <TextArea fx:id="fileContentQueryResultsTa" editable="false" promptText="The results of the query will be written here" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab closable="false" text="Get file info">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <content>
+                                                <VBox spacing="10.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <VBox>
+                                                                     <children>
+                                                                        <Label text="Get account Infos">
+                                                                           <font>
+                                                                              <Font size="20.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                        <Label text="Get account infos for an account" textFill="#000000bf">
+                                                                           <font>
+                                                                              <Font size="16.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </VBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="File ID">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="The ID for the file whose infos are requested." />
+                                                                  <TextField fx:id="fileToGetInfosFromTf" promptText="FILE_ID" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox />
+                                                      <HBox maxHeight="-Infinity" VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Button fx:id="getFileInfoBtn" mnemonicParsing="false" onAction="#getFileInfo" text="Get file info" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <TextArea fx:id="fileInfoQueryResultsTa" editable="false" maxHeight="1.7976931348623157E308" promptText="FILE_INFO_QUERY_RESULTS" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+    <AnchorPane SplitPane.resizableWithParent="false">
+         <children>
+            <VBox spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="Global console" />
+                  <TextArea fx:id="globalConsoleTA" editable="false" minHeight="100.0" promptText="RESPONSE_OUTPUT_TEXTAREA" VBox.vgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+  </items>
+</SplitPane>
